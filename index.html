@@ -13,6 +13,30 @@
     <div class='level'>
         <div class='level-item'>
             <a class='subtitle'>Number</a>
+            <ul id = num></ul>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                document.querySelector('div').onsubmit = function () {
+                    var nums = document.querySelector('#num');
+                    var numInput = document.querySelector('#input-num');
+                    var submitNum = document.querySelector('#button-compute');
+                        // Create new todo
+                    var num = document.createElement('li');
+                    var numTopic = document.createElement('span');
+                    todoTopic.innerHTML = num_Input.value;
+       
+                };
+        // Append elements to li
+        todo.append(numTopic);
+        // Append li to ul
+        nums.append(num);
+        // Reset input
+        numInput.value = '';
+        submitNum.disabled = true;
+        return false;
+    };
+});
+            </script>
             <input id='input-number' placeholder='Insert number..' class='input' style='width: 200px'></input>
             <button id='button-compute' class='button is-primary'>Modify Student ID</button>
         </div>
